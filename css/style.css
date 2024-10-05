@@ -1,0 +1,103 @@
+body {
+    background-color: #2c3a47; /* Warna latar belakang yang lebih cerah */
+    color: #ffffff; /* Warna teks putih */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #34495e; /* Warna latar belakang kontainer yang lebih cerah */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+h1 {
+    color: #cdcecf; /* Warna biru yang lebih terang */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-group label {
+    color: #cce0ec; /* Warna biru yang lebih terang */
+}
+
+.form-control {
+    background-color: #2c3e50; /* Warna latar belakang input yang lebih gelap */
+    color: #ffffff; /* Warna teks putih */
+    border-color: #34495e; /* Warna border input yang lebih gelap */
+}
+
+.form-control:focus {
+    background-color: #2c3e50; /* Warna latar belakang input yang lebih gelap saat fokus */
+    color: #ffffff; /* Warna teks putih saat fokus */
+    border-color: #3498db; /* Warna border input yang lebih terang saat fokus */
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.btn-primary {
+    background-color: #3498db; /* Warna biru yang lebih terang */
+    border-color: #3498db;
+    color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Warna biru yang lebih gelap saat hover */
+    border-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d; /* Warna abu-abu gelap */
+    border-color: #7f8c8d;
+    color: #ffffff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #6c757d; /* Warna abu-abu lebih gelap saat hover */
+    border-color: #6c757d;
+}
+
+.loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* UX Improvements */
+.btn:active {
+    transform: scale(0.95);
+}
+
+.table {
+    color: #ffffff;
+}
+
+.table thead th {
+    background-color: #2980b9; /* Warna biru yang lebih gelap */
+    border-color: #2980b9;
+}
+
+.table tbody tr:hover {
+    background-color: #34495e; /* Warna abu-abu lebih gelap saat hover */
+}
+
+.table td {
+    max-width: 150px; /* Batas lebar maksimum kolom */
+    white-space: nowrap; /* Mencegah teks membungkus */
+    overflow: hidden; /* Menyembunyikan teks yang melebihi batas */
+    text-overflow: ellipsis; /* Menambahkan elipsis (...) jika teks terlalu panjang */
+}
