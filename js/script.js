@@ -3,7 +3,7 @@ $(document).ready(function() {
     function fetchWebData() {
         showLoading();
         $.ajax({
-            url: 'https://localhost:3000/web-data',
+            url: 'https://127.0.0.1:3000/web-data',
             type: 'GET',
             success: function(data) {
                 $('#webDataList').empty();
@@ -52,7 +52,7 @@ $(document).ready(function() {
         };
 
         const requestType = id ? 'PUT' : 'POST';
-        const urlEndpoint = id ? `https://localhost:3000/web-data/${id}` : 'https://localhost:3000/web-data';
+        const urlEndpoint = id ? `https://127.0.0.1:3000/web-data/${id}` : 'https://127.0.0.1:3000/web-data';
 
         $.ajax({
             url: urlEndpoint,
@@ -86,7 +86,7 @@ $(document).ready(function() {
             if (willDelete) {
                 showLoading();
                 $.ajax({
-                    url: `https://localhost:3000/web-data/${id}`,
+                    url: `https://127.0.0.1:3000/web-data/${id}`,
                     type: 'DELETE',
                     success: function(response) {
                         swal('Success', response.message, 'success');
@@ -107,7 +107,7 @@ $(document).ready(function() {
         const id = $(this).data('id');
         showLoading();
         $.ajax({
-            url: `https://localhost:3000/web-data/${id}`,
+            url: `https://127.0.0.1:3000/web-data/${id}`,
             type: 'GET',
             success: function(data) {
                 $('#webDataId').val(data[0].id);
